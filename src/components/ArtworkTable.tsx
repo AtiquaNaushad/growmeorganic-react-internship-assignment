@@ -56,11 +56,12 @@ export const ArtworkTable = ({
                             onValueChange={(e) => setRowCount(e.value ?? 0)}
                             min={0}
                             max={totalRecords}
-                            className="w-full"
+                            className="w-full "
                         />
 
 
                         <Button
+                            className="flex justify-center items-center text-center"
                             label="Select"
                             onClick={() => {
                                 if (rowCount === 0) {
